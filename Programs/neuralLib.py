@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-############# SCALABLE WEIGHT MATRIX WITH RANDOM INPUT #################
+############# SCALABLE WEIGHT MATRIX WITH RANDOM INPUT (still to improve) #################
 def scalableWeightMatrix(nbLay, nbNeurone):
 	#Fabrique la premiere couche de matrice [[],[],...]
 	WM = []
@@ -134,10 +134,8 @@ def gradientDescent(W,B,gradient,learningRate, nbNeur, nbLay):
 	
 ####################### COST GRAPHING ################################
 def plotter(nbTests, title):
-	CostFile = open('CostFile.txt', 'r')
-	
+	CostFile = open('CostFile.txt', 'r')  #We now use the data from this file to make a plot
 	cost = []
-	
 	for i in range(nbTests):
 		cost.append(float(CostFile.readline().rstrip()))
 	
