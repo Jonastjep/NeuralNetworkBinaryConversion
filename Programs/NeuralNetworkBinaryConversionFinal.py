@@ -16,10 +16,10 @@ def main():
 	Err = nl.vector_Z_B_Err_Matrix(nbLay, nbNeur, 0.)
 	
 	################# MAIN LOOP #####################
-	Fi = open(testFile,'r')						#File with TestData (binary input) created with binaryFileCreator.py
+	Fi = open(testFile,'r')				#File with TestData (binary input) created with binaryFileCreator.py
 	
 	nbTests = int(Fi.readline().rstrip())		#Imports the number you chose with binaryFileCreator.py as the number of 
-												#loops and binary numbers your program will go through (you can change it manually of course)
+							#loops and binary numbers your program will go through (you can change it manually of course)
 	
 	CostFile = open('CostFile.txt', 'w')		#File where values of cost function are printed
 	AnswerFile = open('AnswerFile.txt', 'w')	#File where the output and supposed output can be compared
