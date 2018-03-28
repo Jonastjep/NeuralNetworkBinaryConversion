@@ -4,8 +4,8 @@ Neural Network porject that teaches program to convert simple binary numbers to 
 ######################### HOW TO USE THIS PROGRAM #########################
 
 INTRO:
-This Neural Network learns to convert three digit binary to decimal (so from
-0 to 8). The library was designed to make it easy to create Neural networks
+This Neural Network learns to convert three* bit binary to decimal (so from
+0 to 7). The library was designed to make it easy to create Neural networks
 for other purposes and the basic structure of NeuralNetworkFinal.py is made
 to be easily modified (adding layers, neurones, changing learning rate, etc...)
 so that it can played with and test different combinations. The following 
@@ -17,6 +17,10 @@ of this very simple neural network.
 
 Just for your information, I haven't implemented stochastic gradient descent, so 
 do not exagerate on the number of trainings you do.
+
+*You can easily change this number to what ever you want directly from the program script
+but do not forget to adapt the whole neural network to your change, particularly the input
+and output layers that will have different nb of neurones.
 
 STEPS
 
