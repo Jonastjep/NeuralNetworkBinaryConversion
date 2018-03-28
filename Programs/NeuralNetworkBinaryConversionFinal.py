@@ -3,11 +3,11 @@ import neuralLib as nl
 def main():
 	
 	############ VAR AND MATRIX SETUP (you can tweak the variables here) ###############
-	title = '3-8-8 with .5 LearningRate' #title of the graph
-	nbNeur = [3,8,8]
-	nbLay = 3
-	LearningRate = .5
-	testFile = 'Test_File_NN.txt'		#Filename of the file containing training samples
+	title = '6-16-64 with 4 as LearningRate'	#title of the graph
+	nbNeur = [6,16,64]				#Be careful that the input and output layers correspond to the txt file data
+	nbLay = 3					#Make sure you have the same nbLay as there are  variables in nbNeur
+	LearningRate = 4
+	testFile = 'Test_File_NN.txt'			#Filename of the file containing training samples
 	
 	W = nl.scalableWeightMatrix(nbLay, nbNeur)
 	A = nl.vector_A_Matrix(nbLay, nbNeur)
