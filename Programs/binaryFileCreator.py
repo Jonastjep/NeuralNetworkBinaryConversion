@@ -11,8 +11,8 @@
 #Example : I have the decimal number 7 with a nbBin = 4
 #My first line of data would be 0111 (the binary form of the decimal 7, with 4 binary slots)
 #The second line would be 0000000100000000 (the 1 is on the 8th slot on 16, representing the decimal nb 7)
-#						 (0123456789111111)(these lines are not in the file, they just name the different slots)
-#						 (		    012345)
+#			  (0123456789111111)(these lines are not in the file, they just name the different slots)
+#			  ( 	     012345)
 #This repeats the number of times you want, which is asked inside the program.
 
 
@@ -34,17 +34,17 @@ def printBin(nbLine, nbBin, a):
 	
 	for i in range(nbLine):
 		for j in range(nbBin):
-			a = a + str(round(random.random()))							#Creates a random binary number to solve
+			a = a + str(round(random.random()))		#Creates a random binary number to solve
 		
 		F.write(a)
 		F.write('\n')
-		dec = int(a,2)													#Creates the decimal version of the binary number
+		dec = int(a,2)						#Creates the decimal version of the binary number
 		
-		for i in range(pow(2,nbBin)):									#Creates a string of 2^nbBin digits that show to the Neural
-			if i == dec: 												#Network the correct neurone to fire on the final layer.
-				F.write('1')											#The string has the same nb of chars as the final layer has
-			else:														#neurones. The 1 represents the neurone that should have fired,
-				F.write('0')											#the 0 shows that the neurone shouldn't have fired.
+		for i in range(pow(2,nbBin)):				#Creates a string of 2^nbBin digits that show to the Neural
+			if i == dec: 					#Network the correct neurone to fire on the final layer.
+				F.write('1')				#The string has the same nb of chars as the final layer has
+			else:						#neurones. The 1 represents the neurone that should have fired,
+				F.write('0')				#the 0 shows that the neurone shouldn't have fired.
 				
 		F.write('\n')
 		a = ''
