@@ -20,7 +20,7 @@ import random
 
 def main():
 	nbLine = int(input('Please enter the number of numbers you want: '))
-	nbBin = 6
+	nbBin = 3
 	a = ''
 	
 	printBin(nbLine, nbBin, a)
